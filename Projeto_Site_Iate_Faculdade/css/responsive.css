@@ -1,0 +1,154 @@
+@media screen and (max-width: 455px) {
+  .box .box-content-text .content-text .description {
+    font-size: 0.95rem!important;
+    padding-bottom: 15px!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar #mobile-bar {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 15px;
+    transform: translatey(-50%);
+    background-color: transparent;
+    border:none;
+    color: #FFFFFF;
+    font-size: 36px;
+  }
+  
+  .navbar #nav-list {
+    display: none;
+  }
+
+  .box {
+    max-width: unset;
+    position: relative;
+    bottom: unset;
+    right: unset;
+  }
+
+  .box .box-content-text {
+    padding: 5px 0;
+  }
+
+  .box .box-content-text .content-text .title {
+    font-size: 1.3rem;
+  }
+  
+  .box .box-content-text .content-text .description {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+  }
+
+  .container-destiny-info {
+    flex-wrap: wrap;
+  }
+
+  .container-destiny-info .content-destiny-info {
+    max-width: unset;
+    margin-bottom: 15px;
+  }
+  .container-destiny-info .content-destiny-info:last-child {
+    margin-bottom: 0;
+  }
+  .container-destiny-info .content-destiny-info>a {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .container-destiny-info .content-destiny-info .title {
+    padding: 0 15px;
+  }
+  .container-destiny-info .content-destiny-info .tamanho {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .container-destiny-info .content-destiny-info .picture-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-destiny-info .content-destiny-info .picture-box img {
+    width: 100%;
+  }
+  .container-destiny-info .content-destiny-info #pictureBoxFrota img {
+    width: 50%;
+    border: 1px solid white;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar #mobile-bar {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 15px;
+    transform: translatey(-50%);
+    background-color: transparent;
+    border:none;
+    color: #FFFFFF;
+    font-size: 36px;
+  }
+  
+  .navbar #nav-list {
+    display: none;
+  }
+
+  .box {
+    max-width: 400px;
+    right: 10px;
+    bottom: 35px;
+  }
+
+  .box .box-content-text {
+    padding: 5px 0;
+  }
+
+  .box .box-content-text .content-text .title {
+    font-size: 1.1rem;
+  }
+  
+  .box .box-content-text .content-text .description {
+    font-size: .95rem;
+    padding-bottom: 15px;
+  }
+
+  .container-destiny-info {
+    flex-wrap: wrap;
+  }
+
+  .container-destiny-info .content-destiny-info {
+    max-width: 48%;
+    margin-bottom: 15px;
+  }
+  .container-destiny-info .content-destiny-info:last-child {
+    margin-bottom: 0;
+  }
+  .container-destiny-info .content-destiny-info>a {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .container-destiny-info .content-destiny-info .title {
+    padding: 0 15px;
+  }
+  .container-destiny-info .content-destiny-info .tamanho {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .container-destiny-info .content-destiny-info .picture-box img {
+    width: 100%;
+  }
+  .container-destiny-info .content-destiny-info #pictureBoxFrota img {
+    width: 50%;
+    border: 1px solid white;
+  }
+}
