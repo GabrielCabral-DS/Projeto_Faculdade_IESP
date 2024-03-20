@@ -1,8 +1,7 @@
 package br.com.gabrielcabral.servicex.categoria.domain;
-
+import br.com.gabrielcabral.servicex.servico.domain.Servico;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Generated;
 
 import java.util.List;
 
@@ -16,10 +15,11 @@ public class Categoria {
     private Integer idCategoria;
     @Column(name = "NOME_CATEGORIA")
     private String nomeCategoria;
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "idServico", cascade = CascadeType.ALL)
     private List<Servico> servicos;
     public Categoria() {
     }
+
     public Categoria(Integer idCategoria, String nomeCategoria, List<Servico> servicos) {
         this.idCategoria = idCategoria;
         this.nomeCategoria = nomeCategoria;

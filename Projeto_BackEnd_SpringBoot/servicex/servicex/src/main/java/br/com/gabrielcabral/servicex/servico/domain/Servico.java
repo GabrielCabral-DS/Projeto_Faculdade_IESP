@@ -1,18 +1,15 @@
-package br.com.gabrielcabral.servicex.categoria.domain;
+package br.com.gabrielcabral.servicex.servico.domain;
 
+import br.com.gabrielcabral.servicex.categoria.domain.Categoria;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.List;
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "SERVICOS")
+@Entity
+@Table(name ="SERVICO")
 public class Servico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,9 +18,11 @@ public class Servico {
     @Column(name = "NOME_SERVICO")
     private String nomeServico;
     @Column(name = "VALOR_SERVICO")
-    private double valor;
+    private Double valor;
     @ManyToOne
-    @JoinColumn(name = "idcategoria")
+    @JoinColumn(name = "id_Categoria")
     private Categoria categoria;
-    private List<OrdemServico> ordemServicos;
+
+
 }
+
