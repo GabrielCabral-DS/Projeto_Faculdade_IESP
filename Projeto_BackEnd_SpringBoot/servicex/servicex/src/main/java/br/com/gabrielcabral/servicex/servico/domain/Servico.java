@@ -1,8 +1,11 @@
 package br.com.gabrielcabral.servicex.servico.domain;
 
 import br.com.gabrielcabral.servicex.categoria.domain.Categoria;
+import br.com.gabrielcabral.servicex.ordemservico.domain.OrdemServico;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,6 +25,8 @@ public class Servico {
     @ManyToOne
     @JoinColumn(name = "id_Categoria")
     private Categoria categoria;
+    @ManyToMany
+    private List<OrdemServico> ordemServicos;
 
 
 }
