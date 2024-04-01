@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
+ /*
 import java.net.URI;
-
 @RestController
 @RequestMapping(value = "/ordemservicos")
 public class OrdemServicoResource {
@@ -22,3 +21,6 @@ public class OrdemServicoResource {
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand()(ordemServicoService.getIdOrdemServico);
     }
 }
+
+
+  */

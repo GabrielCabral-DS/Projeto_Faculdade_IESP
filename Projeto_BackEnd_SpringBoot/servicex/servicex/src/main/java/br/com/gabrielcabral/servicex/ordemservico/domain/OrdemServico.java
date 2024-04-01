@@ -1,3 +1,4 @@
+
 package br.com.gabrielcabral.servicex.ordemservico.domain;
 import br.com.gabrielcabral.servicex.pagamento.domain.Pagamento;
 import br.com.gabrielcabral.servicex.servico.domain.Servico;
@@ -31,3 +32,4 @@ public class OrdemServico {
     private Set<Servico> servicos;
 
 }
+
