@@ -7,6 +7,8 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
@@ -21,6 +23,7 @@ public class CategoriaResource {
     @Autowired
     private CategoriaService categoriaService;
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping
     public ResponseEntity<Void> cadastrarCategoria(@Valid @RequestBody CategoriaDTO categoriaDTO){
         Categoria categoria = categoriaService.fromDTO(categoriaDTO);
@@ -29,7 +32,7 @@ public class CategoriaResource {
                 .buildAndExpand(categoria.getIdCategoria()).toUri();
         return  ResponseEntity.created(uri).build();
     }
-
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     @GetMapping
     public ResponseEntity<List<CategoriaDTO>> listarCategorias(){
         List<Categoria> listaCategorias = categoriaService.listarCategorias();
