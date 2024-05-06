@@ -32,7 +32,7 @@ public class SecurityConfig {
         auth.inMemoryAuthentication()
                 .withUser("Gabriel")
                 .password(passwordEncoder.encode("12345"))
-                .roles()
+                .roles("USER")
                 .and()
                 .withUser("Cabral")
                 .password(passwordEncoder.encode("987654"))
