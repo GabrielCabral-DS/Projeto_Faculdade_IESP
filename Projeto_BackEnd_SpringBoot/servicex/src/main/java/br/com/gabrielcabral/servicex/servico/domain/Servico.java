@@ -34,11 +34,11 @@ public class Servico {
     private List<OrdemServico> ordemServicos;
 
 
-    public Servico(Integer idServico, String nome, Double valor, Categoria categoria) {
+    public Servico(Integer idServico, String nomeServico, Double valorServico, Categoria categoriaServico) {
         this.idServico = idServico;
-        this.nome = nome;
-        this.valor = valor;
-        this.categoria = categoria;
+        this.nome = nomeServico;
+        this.valor = valorServico;
+        this.categoria = categoriaServico;
     }
 
 
